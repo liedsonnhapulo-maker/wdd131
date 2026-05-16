@@ -1,67 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@500;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 :root {
     --primary: #2c3e50;
-    --secondary: #f4f1ea;
     --accent: #c19a6b;
-    --text: #1f1f1f;
+    --bg: #f4f1ea;
 }
 
 body {
+    margin: 0;
     font-family: "Montserrat", sans-serif;
-    background-color: var(--secondary);
-    color: var(--text);
-    line-height: 1.6;
+    background: var(--bg);
 }
 
 header {
     background: var(--primary);
     color: white;
-    padding: 1rem;
     text-align: center;
+    padding: 1rem;
 }
 
-header h2 {
-    font-family: "Playfair Display", serif;
-    margin-bottom: 0.5rem;
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
 }
 
 nav {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 0.5rem;
 }
 
+nav.show {
+    display: flex;
+}
+
 nav a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     padding: 0.5rem;
-    border-radius: 5px;
-    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 nav a:hover {
     background: var(--accent);
     color: black;
-    transform: scale(1.05);
 }
 
 main {
     max-width: 900px;
     margin: 0 auto;
     padding: 1rem;
-}
-
-main h1 {
     text-align: center;
-    margin: 1rem 0;
-    font-family: "Playfair Display", serif;
 }
 
 .gallery {
@@ -71,57 +60,22 @@ main h1 {
 }
 
 figure {
+    margin: 0;
     background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
-figure img {
+img {
     width: 100%;
     display: block;
 }
 
 figcaption {
     padding: 0.5rem;
-    font-weight: 600;
 }
 
 footer {
     text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
     background: var(--primary);
     color: white;
-}
-.hamburger {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto 0.5rem;
-}
-
-nav {
-    display: none;
-}
-
-nav.show {
-    display: flex;
-}
-
-@media (min-width: 768px) {
-    .hamburger {
-        display: none;
-    }
-
-    nav {
-        display: flex !important;
-        flex-direction: row;
-        justify-content: center;
-        gap: 1rem;
-    }
+    padding: 1rem;
 }

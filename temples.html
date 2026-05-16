@@ -1,79 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temple Album</title>
-    <meta name="description" content="WDD131 Temples Albums">
+    <meta name="description"
+        content="Temple Album showcasing a collection of temples with images and captions, built using HTML, CSS, and JavaScript for a responsive design.">
     <meta name="author" content="Liedson Nhapulo">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@500;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temple-large.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
     <script src="scripts/temples.js" defer></script>
 </head>
+
 <body>
     <header>
         <h2>Temple Album</h2>
         <nav>
-            <a href="index.html"></a>
+            <a href="index.html">Home</a>
             <a href="#">Old</a>
             <a href="#">New</a>
             <a href="#">Large</a>
             <a href="#">Small</a>
         </nav>
     </header>
+
     <main>
         <h1>Temples</h1>
+
         <div class="gallery">
             <figure>
-                <img src="images/accra_ghana.jpeg" alt="accra ghana">
+                <img src="images/accra_ghana.jpeg" alt="Accra Ghana Temple">
                 <figcaption>Accra Ghana Temple</figcaption>
             </figure>
-            
+
             <figure>
-                <img src="images/cape_town.jpg" alt="Cape cape town">
+                <img src="images/cape_town.jpg" alt="Cape Town Temple">
                 <figcaption>Cape Town Temple</figcaption>
             </figure>
-            
+
             <figure>
-                <img src="images/Durban.jpg" alt="Durban">
+                <img src="images/durban.jpg" alt="Durban Temple">
                 <figcaption>Durban Temple</figcaption>
             </figure>
-            
+
             <figure>
-                <img src="images/Johannesburg.jpg" alt="Johannesburg">
+                <img src="images/johannesburg.jpg" alt="Johannesburg Temple">
                 <figcaption>Johannesburg Temple</figcaption>
             </figure>
-            
+
             <figure>
-                <img src="images/san_diego_California.jpg" alt="san diego California">
+                <img src="images/san_diego_california.jpg" alt="San Diego California Temple">
                 <figcaption>San Diego California Temple</figcaption>
             </figure>
-            
+
             <figure>
-                <img src="images/oakland_California.jpg" alt="oakland California">
+                <img src="images/oakland_california.jpg" alt="Oakland California Temple">
                 <figcaption>Oakland California Temple</figcaption>
             </figure>
-            
+
             <figure>
-                <img src="images/rexburg_Idaho.jpg" alt="rexburg Idaho">
+                <img src="images/rexburg_idaho.jpg" alt="Rexburg Idaho Temple">
                 <figcaption>Rexburg Idaho Temple</figcaption>
             </figure>
-            
+
             <figure>
-                <img src="images/Salt_lake.jpg" alt="Salt lake">
+                <img src="images/salt_lake.jpg" alt="Salt Lake Temple">
                 <figcaption>Salt Lake Temple</figcaption>
             </figure>
-            
+
             <figure>
-                <img src="images/Washingtondc.jpg" alt="Washington dc">
+                <img src="images/washingtondc.jpg" alt="Washington DC Temple">
                 <figcaption>Washington DC Temple</figcaption>
             </figure>
         </div>
-            
     </main>
+
     <footer>
         <p>&copy; <span id="year"></span> Temple Album | All Rights Reserved</p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
 </body>
+
 </html>
