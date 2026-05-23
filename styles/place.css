@@ -2,8 +2,9 @@
     --primary-color: #007168;
     --secondary-color: #f4f4f4;
     --accent-color: #ffcc00;
-    --text-color: #222;
-    --white: #ffffff;
+    --text-color: #222222;
+    --white-color: #ffffff;
+    --shadow-color: #0000001a;
 }
 
 * {
@@ -21,7 +22,7 @@ body {
 
 header {
     background-color: var(--primary-color);
-    color: var(--white);
+    color: var(--white-color);
     text-align: center;
     padding: 1rem;
 }
@@ -39,10 +40,10 @@ header {
 }
 
 .card {
-    background-color: var(--white);
+    background-color: var(--white-color);
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px var(--shadow-color);
 }
 
 .card h2 {
@@ -57,7 +58,7 @@ header {
 
 footer {
     background-color: var(--primary-color);
-    color: var(--white);
+    color: var(--white-color);
     text-align: center;
     padding: 1rem;
     margin-top: 1rem;
