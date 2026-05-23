@@ -1,0 +1,66 @@
+<!-- place.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover Mozambique, a beautiful country in Southeast Africa known for its beaches, culture, and natural beauty.">
+    <meta name="author" content="Liedson Nhapulo">
+
+    <title>Mozambique | Country Page</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mozambique</h1>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/mozambique-large.webp">
+                <img src="images/mozambique-small.webp" alt="Beautiful view of Mozambique beach">
+            </picture>
+        </section>
+
+        <section class="content">
+
+            <div class="card">
+                <h2>Data</h2>
+                <p><strong>Capital:</strong> Maputo</p>
+                <p><strong>Population:</strong> 33 Million</p>
+                <p><strong>Languages:</strong> Portuguese</p>
+                <p><strong>Currency:</strong> Metical (MZN)</p>
+                <p><strong>Famous For:</strong> Beaches and Culture</p>
+            </div>
+
+            <div class="card weather">
+                <h2>Weather</h2>
+
+                <img src="images/weather-svgrepo-com.svg" alt="Weather Icon" class="weather-icon">
+
+                <p><strong>Temperature:</strong> <span id="temperature">8</span> °C</p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind Speed:</strong> <span id="windspeed">12</span> km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Liedson Nhapulo | Mozambique</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
