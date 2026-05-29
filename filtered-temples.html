@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temple Album</title>
+
+    <meta name="description"
+        content="Temple Album showcasing a collection of temples with images and captions, built using HTML, CSS, and JavaScript for a responsive design.">
+
+    <meta name="author" content="Liedson Nhapulo">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- corrected filename -->
+    <link rel="stylesheet" href="styles/filetered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temple-large.css">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h2>Temple Album</h2>
+
+        <nav>
+            <a href="#" id="home">Home</a>
+            <a href="#" id="old">Old</a>
+            <a href="#" id="new">New</a>
+            <a href="#" id="large">Large</a>
+            <a href="#" id="small">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="page-title">Temples</h1>
+
+        <div class="gallery"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Temple Album | All Rights Reserved</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
