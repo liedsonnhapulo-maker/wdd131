@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T3 Ward Site Plan</title>
+    <meta name="description"
+        content="Website planning document for the T3 Ward of The Church of Jesus Christ of Latter-day Saints">
+    <meta name="author" content="Liedson Nhapulo">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>T3 Ward Website Plan</h1>
+        <p>The Church of Jesus Christ of Latter-day Saints</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Site Name</h2>
+            <h3>T3 Ward LDS Community</h3>
+            <p>
+                This name identifies the T3 Ward of The Church of Jesus Christ of
+                Latter-day Saints and represents a community-centered website that
+                provides information, inspiration, and communication resources for
+                members and visitors.
+            </p>
+        </section>
+
+        <section>
+            <h2>Site Purpose</h2>
+            <p>
+                The website will provide information about the T3 Ward, including
+                meeting schedules, announcements, leadership information, youth
+                programs, service projects, inspirational messages, contact
+                information, and photographs. The site will be responsive and
+                accessible on both desktop and mobile devices.
+            </p>
+        </section>
+
+        <section>
+            <h2>Scenarios</h2>
+            <ul>
+                <li>What time are the Sunday worship services held?</li>
+                <li>How can I contact the ward leadership?</li>
+                <li>What activities are available for youth members?</li>
+                <li>Where can I find information about upcoming service projects?</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Color Schema</h2>
+
+            <h3>Navy Blue (#003366)</h3>
+            <p>
+                Used for headings, navigation menus, and important content areas.
+            </p>
+
+            <h3>Gold (#D4AF37)</h3>
+            <p>
+                Used for accents, buttons, borders, and highlighted sections.
+            </p>
+
+            <h3>White (#FFFFFF)</h3>
+            <p>
+                Used as the primary background color for readability.
+            </p>
+        </section>
+
+        <section>
+            <h2>Typography</h2>
+
+            <h3>Merriweather</h3>
+            <p>
+                Used for headings and section titles.
+            </p>
+
+            <h3>Roboto</h3>
+            <p>
+                Used for body text, paragraphs, and lists.
+            </p>
+        </section>
+
+        <section>
+            <h2>Wireframe - Mobile View</h2>
+
+            <pre>
+LOGO
+
+NAVIGATION MENU
+
+HERO IMAGE
+
+WELCOME MESSAGE
+
+ANNOUNCEMENTS
+
+YOUTH PROGRAMS
+
+SERVICE PROJECTS
+
+FOOTER
+            </pre>
+        </section>
+
+        <section>
+            <h2>Wireframe - Desktop View</h2>
+
+            <pre>
+
+LOGO                          NAVIGATION MENU
+
+                    HERO IMAGE
+
+WELCOME     ANNOUNCEMENTS     YOUTH PROGRAMS
+
+SERVICE PROJECTS      CONTACT INFORMATION
+
+FOOTER
+
+            </pre>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Liedson Nhapulo 👑 Mozambique</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById("currentyear").textContent =
+            new Date().getFullYear();
+
+        document.getElementById("lastModified").textContent =
+            document.lastModified;
+    </script>
+
+</body>
+
+</html>
