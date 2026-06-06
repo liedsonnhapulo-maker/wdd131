@@ -1,0 +1,151 @@
+:root {
+    --primary-color: #1e3a5f;
+    --secondary-color: #f4f7fa;
+    --accent-color: #ffb703;
+    --text-color: #222;
+    --white: #ffffff;
+    --border-color: #dcdcdc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* NAV */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: #15304f;
+}
+
+nav li {
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* MAIN */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* FIELDSET */
+fieldset {
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+/* INPUTS */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: .75rem;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+}
+
+/* REQUIRED COLORS */
+input:required,
+select:required,
+textarea:required {
+    border: 2px solid red;
+}
+
+input:required:valid,
+select:required:valid,
+textarea:required:valid {
+    border: 2px solid green;
+    background: #f0fff0;
+}
+
+/* FEATURES */
+fieldset label {
+    display: block;
+    margin: 0.3rem 0;
+}
+
+/* ⭐ STARS */
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.rating input:checked~label {
+    color: gold;
+}
+
+.rating label:hover,
+.rating label:hover~label {
+    color: gold;
+}
+
+/* BUTTON */
+input[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #15304f;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: white;
+    margin-top: 2rem;
+}
