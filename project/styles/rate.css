@@ -1,0 +1,164 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f4f6f9;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: #1f3b57;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background: #2e5c86;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+main {
+    padding: 15px;
+}
+
+/* SECTIONS */
+section {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+/* =========================
+   FORM STYLING
+========================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* RADIO BUTTONS */
+input[type="radio"] {
+    margin-right: 6px;
+}
+
+h3 {
+    margin-top: 10px;
+    color: #1f3b57;
+}
+
+/* BUTTON */
+button {
+    background: #1f3b57;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1f3b57;
+    color: white;
+}
+
+/* =========================
+   MEDIUM SCREEN (TABLET)
+========================= */
+
+@media (min-width: 600px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    main {
+        max-width: 800px;
+        margin: auto;
+    }
+}
+
+/* =========================
+   LARGE SCREEN (DESKTOP)
+========================= */
+
+@media (min-width: 1024px) {
+
+    main {
+        max-width: 1000px;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    nav a:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+}

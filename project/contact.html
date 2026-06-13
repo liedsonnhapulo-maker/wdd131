@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Rate Us - T3 Ward</title>
+
+    <meta name="description" content="Contact T3 Ward and rate the website experience">
+    <meta name="author" content="Liedson Nhapulo">
+
+    <link rel="stylesheet" href="styles/rate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="scripts/contact.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>T3 Ward</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About T3 Ward</a>
+            <a href="memorial.html">Memorial</a>
+            <a href="programs.html">Youth and family programs</a>
+            <a href="oportunities.html">Service opportunities</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Contact Us</h2>
+            <p>
+                If you would like to contact T3 Ward or give feedback about the website,
+                please fill in the form below.
+            </p>
+        </section>
+
+        <!-- CONTACT + RATING FORM -->
+        <section>
+            <h2>Website Rating Form</h2>
+
+            <form action="#" method="post">
+
+                <!-- NAME -->
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required>
+
+                <!-- CONTACT -->
+                <label for="contact">Contact Number *</label>
+                <input type="tel" id="contact" name="contact" required>
+
+                <!-- EMAIL -->
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- QUESTION -->
+                <h3>Did this website help you learn about T3 Ward?</h3>
+
+                <label>
+                    <input type="radio" name="help" value="yes" required>
+                    Yes, it helped me a lot
+                </label>
+
+                <label>
+                    <input type="radio" name="help" value="somewhat">
+                    Somewhat helpful
+                </label>
+
+                <label>
+                    <input type="radio" name="help" value="no">
+                    No, not really
+                </label>
+
+                <!-- RATING -->
+                <label for="rating">Rate this website (1 to 5): *</label>
+                <select id="rating" name="rating" required>
+                    <option value="">Select rating</option>
+                    <option value="1">1 - Poor</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="3">3 - Good</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+
+                <!-- MESSAGE -->
+                <label for="message">Your Feedback</label>
+                <textarea id="message" name="message" rows="5"
+                    placeholder="Write your opinion about T3 Ward and this website..."></textarea>
+
+                <!-- SUBMIT -->
+                <button type="submit">Submit Feedback</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Liedson Nhapulo 👑 Mozambique</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
